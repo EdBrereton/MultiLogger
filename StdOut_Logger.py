@@ -5,8 +5,7 @@ import datetime
 
 class StdOut_Logger(Logger):
     
-    def __init__ (self,logLocation, logSource):
-        self._logLocation_ = logLocation
+    def __init__ (self, logSource):
         self._logSource_ = logSource
 
 
