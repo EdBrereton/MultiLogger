@@ -3,8 +3,9 @@
 import requests
 import json
 from LogLevels import LogLevel
+from LoggerAbc import Logger
 
-class IFTTT_Logger(object):
+class IFTTT_Logger(Logger):
     
     def __init__ (self, iftttMethod, iftttKey, logSource):
         self._iftttMethod_ = iftttMethod
