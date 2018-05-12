@@ -11,7 +11,7 @@ class StdErr_Logger(Logger):
 
 
     def _writeLog_(self, logLevel, logMessage):
-        logLine = "[{0}]{1} - {2} - {3}\n".format(self._logSource_, datetime.datetime.now(), logLevel.name, logMessage)
+        logLine = "[{0}] : {1} - {2} - {3}\n".format(self._logSource_, datetime.datetime.now(), logLevel.name, logMessage)
         print(logLine, file=sys.stderr)
 
     def LogInfo(self, logMessage):
